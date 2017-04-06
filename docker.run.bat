@@ -1,0 +1,1 @@
+powershell -NoProfile -ExecutionPolicy Unrestricted .\docker.run.ps1
