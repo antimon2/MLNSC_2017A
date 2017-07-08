@@ -1,7 +1,7 @@
 module LoadMnist
 
 using PyCall
-unshift!(PyVector(pyimport("sys")["path"]), "")
+unshift!(PyVector(pyimport("sys")["path"]), dirname(@__FILE__))
 @pyimport mnist
 
 function load_mnist(;normalize=true, flatten=true, one_hot_label=false)
